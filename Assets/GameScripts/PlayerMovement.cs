@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     
     private int movementSpeed = 5;
-    private float rotationSpeed = 5.0f;
 
 	void Start () {
         Debug.Log("E: PlayerMovement");
@@ -33,16 +32,6 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * movementSpeed * Time.deltaTime);
-        }
-        // Rotation
-        if (Input.GetKey(KeyCode.E))
-        {
-            transform.Rotate(0, rotationSpeed, 0);
-        }
-
-        if (Input.GetKey(KeyCode.Q))
-        {
-            transform.Rotate(0, -rotationSpeed, 0);
         }
     }
 }
