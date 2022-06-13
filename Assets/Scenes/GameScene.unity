@@ -370,6 +370,7 @@ MonoBehaviour:
   prefab: {fileID: 178708322}
   barrierSpeed: 2
   points: {fileID: 363712741}
+  player: {fileID: 545145987}
 --- !u!4 &231526585
 Transform:
   m_ObjectHideFlags: 0
