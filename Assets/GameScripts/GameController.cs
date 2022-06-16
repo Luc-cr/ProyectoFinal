@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class BarrierMovement : MonoBehaviour {
+public class GameController : MonoBehaviour {
 
     // Publics Vars
     public GameObject prefab;
