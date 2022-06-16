@@ -14,11 +14,13 @@ public class GameController : MonoBehaviour {
     // Private Vars
     private GameObject obj;
     private int score = 0;
+    private AudioSource audio;
 
     void Start () {
         // Crear una barrera
         Debug.Log("E: BarrierMovement");
         obj = Instantiate(prefab);
+        audio = GetComponent<AudioSource>();
         obj.transform.position = new Vector3(Random.Range(-2.00f, 7.00f), -6, 5);
     }
 
@@ -34,12 +36,15 @@ public class GameController : MonoBehaviour {
             points.text = "Puntaje " + score.ToString();
             Destroy(obj);
             barrierSpeed++;
+            audio.Play(0);
             obj = Instantiate(prefab);
             obj.transform.position = new Vector3(Random.Range(-2.00f, 7.00f), -6, 5);
         }
-        if(score == 10)
+        
+        if(Time.timeSinceLevelLoad >= 40.00f)
         {
             SceneManager.LoadScene("YouWin");
+
         }
     }
 }

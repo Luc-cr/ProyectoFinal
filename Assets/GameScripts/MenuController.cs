@@ -8,7 +8,7 @@ public class MenuController : MonoBehaviour {
 
     public Button btn1;
     public Text sufb;
-    public int count = 10;
+    private int count = 10;
     void Start() {
         Button btn = btn1.GetComponent<Button>();
         btn.onClick.AddListener(TaskOnClick);
@@ -17,11 +17,11 @@ public class MenuController : MonoBehaviour {
     void TaskOnClick()
     {
         StartCoroutine(Coroutine());
-
+        sufb.text = "Empezando en";
     }
     IEnumerator Coroutine()
     {
-        for (int i = 10; i > 0; i--)
+        for (int i = 11; i > 0; i--)
         {
             sufb.text = i.ToString();
             Debug.Log(i.ToString());
