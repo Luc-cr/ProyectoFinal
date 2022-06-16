@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BarrierMovement : MonoBehaviour {
 
@@ -35,6 +36,10 @@ public class BarrierMovement : MonoBehaviour {
             barrierSpeed++;
             obj = Instantiate(prefab);
             obj.transform.position = new Vector3(Random.Range(-2.00f, 7.00f), -6, 5);
+        }
+        if(score == 10)
+        {
+            SceneManager.LoadScene("YouWin");
         }
     }
 }

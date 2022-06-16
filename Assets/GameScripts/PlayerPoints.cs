@@ -12,6 +12,6 @@ public class PlayerPoints : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+      		
 	}
 }
