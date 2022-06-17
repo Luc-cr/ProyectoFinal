@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             transform.Translate(Vector3.left * movementSpeed * Time.deltaTime);
         }
-
+        
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             transform.Translate(Vector3.back * movementSpeed * Time.deltaTime);
         }
+        
 
         if (Input.GetKey(KeyCode.D))
         {

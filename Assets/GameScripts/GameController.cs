@@ -11,11 +11,12 @@ public class GameController : MonoBehaviour {
     public int barrierSpeed;
     public Text points;
     public GameObject player;
+    public Text TimeLeft;
     // Private Vars
     private GameObject obj;
     private int score = 0;
     private AudioSource audio;
-
+    
     void Start () {
         // Crear una barrera
         Debug.Log("E: BarrierMovement");
@@ -28,6 +29,7 @@ public class GameController : MonoBehaviour {
     {
         // Movimiento de la barrera
         obj.transform.Translate(Vector3.forward * -barrierSpeed * Time.deltaTime);
+        TimeLeft.text = "" + Time.timeSinceLevelLoad.ToString();
 
         if (obj.transform.position.z <= -13f)
         {
