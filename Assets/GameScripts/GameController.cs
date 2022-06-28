@@ -22,13 +22,13 @@ public class GameController : MonoBehaviour {
         Debug.Log("E: BarrierMovement");
         obj = Instantiate(prefab);
         audio = GetComponent<AudioSource>();
-        obj.transform.position = new Vector3(Random.Range(-2.00f, 7.00f), -6, 5);
+        obj.transform.position = new Vector3(Random.Range(-2.00f, 7.00f), 1, 10);// -6
     }
 
     void Update()
     {
         // Movimiento de la barrera
-        obj.transform.Translate(Vector3.forward * -barrierSpeed * Time.deltaTime);
+        obj.transform.Translate(Vector3.left * barrierSpeed * Time.deltaTime);
         TimeLeft.text = "" + Time.timeSinceLevelLoad.ToString();
 
         if (obj.transform.position.z <= -13f)
@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour {
             barrierSpeed++;
             audio.Play(0);
             obj = Instantiate(prefab);
-            obj.transform.position = new Vector3(Random.Range(-2.00f, 7.00f), -6, 5);
+            obj.transform.position = new Vector3(Random.Range(-2.00f, 7.00f), 1, 10);
         }
         
         if(Time.timeSinceLevelLoad >= 40.00f)
