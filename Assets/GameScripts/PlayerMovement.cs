@@ -14,23 +14,23 @@ public class PlayerMovement : MonoBehaviour {
     void Update()
     {
         // Movement
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.S))
         {
             transform.Translate(Vector3.left * movementSpeed * Time.deltaTime);
         }
         
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
+            transform.Translate(Vector3.up * movementSpeed * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(Vector3.back * movementSpeed * Time.deltaTime);
+            transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
         }
         
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.right * movementSpeed * Time.deltaTime);
         }
