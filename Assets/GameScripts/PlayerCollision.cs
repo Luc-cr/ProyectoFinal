@@ -12,7 +12,8 @@ public class PlayerCollision : MonoBehaviour {
 	
     void OnCollisionEnter(Collision coll)
     {
-        if(coll.gameObject.name == "Cube_2" || coll.gameObject.name == "Cube_1")
+        Debug.Log(coll.gameObject.name);
+        if(coll.gameObject.name == "Pinchos(Clone)")
         {
             SceneManager.LoadScene("GameOver");
         }
