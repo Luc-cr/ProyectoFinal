@@ -1,14 +1,24 @@
 fileFormatVersion: 2
-guid: 148fc412fcd7e5a4e8c7d407ad6b2ba4
+guid: 23af08e52288ecd46ac8bce09b143a47
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Espina2
+    100004: Mad Cube
     400000: //RootNode
-    2100000: Material.005
-    2300000: //RootNode
-    3300000: //RootNode
+    400002: Espina2
+    400004: Mad Cube
+    2100000: Material.002
+    2100002: Material
+    2100004: No Name
+    2100006: Material.005
+    2300000: Espina2
+    2300002: Mad Cube
+    3300000: Espina2
+    3300002: Mad Cube
     4300000: Espina2
+    4300002: Mad Cube
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

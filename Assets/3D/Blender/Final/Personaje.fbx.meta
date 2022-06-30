@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 729cf1d7de9839b48a2a804bbbe3d9b9
+guid: 3c22abda38fa3e940960add8c1934fc0
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -9,7 +9,17 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Cubo
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: e9893209a2ebf514e8bf135876a8b40f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PaletaLaMeta
+    second: {fileID: 2800000, guid: 04d0c87e1488d564c8ad535129348a1c, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
